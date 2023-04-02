@@ -19,11 +19,12 @@ function Calculator() {
   return (
     <div className="calculator-container">
       <h1>Calculator:</h1>
-      <br></br><br></br>
+      <br></br>
+      <br></br>
       <p className="calcDis">
         This calculator takes a predicted amount of units used per day and
-        calculates a predicted days price based off todays price of
-        electricity. (k/pWh)
+        calculates a predicted days price based off todays price of electricity.
+        (k/pWh)
       </p>
       <br></br>
       <form onSubmit={handleSubmit}>
@@ -36,9 +37,10 @@ function Calculator() {
           required
         />
         <br></br>
+        <p>On average in the UK we use 10.3 kWh per day.</p>
         <button type="submit">Calculate</button>
       </form>
-      <div className="result">{result}</div>
+      <div className="result">{"£" + result}</div>
     </div>
   );
 }
