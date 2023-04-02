@@ -31,13 +31,12 @@ function BarChart(props) {
           },
           options: {
             scales: {
-              yAxes: [{
-                ticks: {
-                  beginAtZero: true,
-                }
-              }]
-            }
-          }
+              y: {
+                min: 42,
+                max: 43.5,
+              },
+            },
+          },
         });
       },
     });
