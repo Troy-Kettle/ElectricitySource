@@ -19,20 +19,15 @@ const ContactForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // send the form data to a server or do other things with it
-    console.log({ name, email, message });
+    // Open draft email
+    window.location.href = "mailto:x5s42@students.keele.ac.uk";
   };
 
   return (
     <form onSubmit={handleSubmit}>
       <div>
         <label htmlFor="name">Name:</label>
-        <input
-          type="text"
-          id="name"
-          value={name}
-          onChange={handleNameChange}
-        />
+        <input type="text" id="name" value={name} onChange={handleNameChange} />
       </div>
       <div>
         <label htmlFor="email">Email:</label>
